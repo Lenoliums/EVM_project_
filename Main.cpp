@@ -33,6 +33,7 @@ int main() {
     socket.send(inf, len_inf, server, s_port);
     socket.receive(data, data_size, received, server, r_port);
 
+
     height = data[0];
     width = data[1];
     Map map(width, height);
